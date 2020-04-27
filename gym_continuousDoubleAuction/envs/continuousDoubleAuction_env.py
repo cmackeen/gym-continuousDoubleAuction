@@ -19,7 +19,7 @@ class continuousDoubleAuctionEnv(Exchg_Helper, gym.Env, MultiAgentEnv):
 
     metadata = {'render.modes': ['human']}
 
-    def __init__(self, num_of_agents=2, init_cash=0, tick_size=1, tape_display_length=10, max_step=100, is_render=True):
+    def __init__(self, num_of_agents, init_cash, tick_size, tape_display_length, max_step, is_render=True):
         super(continuousDoubleAuctionEnv, self).__init__(init_cash, tick_size, tape_display_length)
 
         self.next_states = {}
